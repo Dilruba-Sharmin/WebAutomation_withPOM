@@ -91,8 +91,11 @@ public class BaseTest {
         return properties.getProperty("password");
     }
 
-    public String getAmount(){
-        return properties.getProperty("amount");
+    public String getAmount(){return properties.getProperty("amount");}
+
+
+    public WebDriver getWebDriver() {
+        return driver;
     }
 }
 

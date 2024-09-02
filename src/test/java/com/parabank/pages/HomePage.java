@@ -14,6 +14,7 @@ public class HomePage extends BasePage {
     }
 
     public OpenNewAccountPage clickOpenAccountLink(){
+        addInfo("This is Home Page");
         waitForElement(By.cssSelector("a[href='openaccount.htm']"));
         getWebElement(By.cssSelector("a[href='openaccount.htm']")).click();
         return getInstance(OpenNewAccountPage.class);

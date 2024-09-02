@@ -29,10 +29,10 @@ public class OpenNewAccountTest extends BaseTest{
 
  }
 
- @Test(enabled = false)        // testcase template=2
+ @Test (enabled = false)       // testcase template=2,LoginViaRegistration
  public void openAccountShouldSucceed2(){
   OpenNewAccountPage newAccountPage=page.getInstance(LoginPage.class)
-          .doLogin(getUsername(),getPassword())
+          .doLoginViaRegistration()
            .clickOpenAccountLink()
           .selectAccountType(1)
           .selectAccountNumber(0)
